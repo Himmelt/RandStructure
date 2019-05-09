@@ -1,0 +1,10 @@
+name: RandStructure
+version: 1.0.0
+author: Himmelt
+main: org.soraworld.randstruct.RandStructure
+depend: [Violet]
+website: https://github.com/Himmelt/RandStructure
+description: RandStructure Plugin.
+permissions:
+  randstruct.admin:
+    default: op
