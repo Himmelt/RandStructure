@@ -1,6 +1,7 @@
 package org.soraworld.randstruct;
 
 import org.bukkit.event.Listener;
+import org.bukkit.generator.ChunkGenerator;
 import org.soraworld.randstruct.command.CommandStructure;
 import org.soraworld.randstruct.listener.EventListener;
 import org.soraworld.randstruct.manager.StructureManager;
@@ -34,5 +35,9 @@ public class RandStructure extends SpigotPlugin {
         command.extractSub(CommandStructure.class);
         command.setUsage("/rst ....");
         register(this, command);
+    }
+
+    public ChunkGenerator getDefaultWorldGenerator(String worldName, String id) {
+        return new RandGenerator();
     }
 }

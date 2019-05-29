@@ -2,7 +2,6 @@ package org.soraworld.randstruct.listener;
 
 import org.bukkit.Chunk;
 import org.bukkit.World;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.world.ChunkLoadEvent;
 import org.soraworld.randstruct.manager.StructureManager;
@@ -15,7 +14,7 @@ public class EventListener implements Listener {
         this.manager = manager;
     }
 
-    @EventHandler
+    //@EventHandler
     public void onChunkLoad(ChunkLoadEvent event) {
         World world = event.getWorld();
         // TODO 如果世界的UUID在配置中启用了随机建筑则继续，否则退出
